@@ -1,0 +1,7 @@
+{
+  "everforest": { "branch": "master", "commit": "4d67edd8d4701b00cee37073d53053a650264541" },
+  "lazy.nvim": { "branch": "main", "commit": "bef521ac89c8d423f9d092e37b58e8af0c099309" },
+  "nvim-treesitter": { "branch": "master", "commit": "121d0c4c6718833ccbaaa4c32a9be0d0a6aab7c1" },
+  "plenary.nvim": { "branch": "master", "commit": "08e301982b9a057110ede7a735dd1b5285eb341f" },
+  "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" }
+}
