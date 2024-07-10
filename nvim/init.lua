@@ -10,6 +10,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   })
 end
 
+
 vim.opt.rtp:prepend(lazypath)
 vim.opt.clipboard = "unnamedplus"
 
@@ -21,5 +22,5 @@ require("lazy").setup({
       	        dependencies = { 'nvim-lua/plenary.nvim' }
    	},
 })
-require("remap")
+require("basics")
 require("plugins.telescope")
