@@ -16,5 +16,3 @@ vim.keymap.set("n", "wl", "<C-w>l")
 --- split 
 vim.keymap.set("n", "ws", function() vim.cmd.split("term://bash")end)
 vim.keymap.set("n", "wv", function() vim.cmd.vsplit("term://bash")end)
-
-
