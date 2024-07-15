@@ -2,9 +2,12 @@ vim.cmd "colorscheme everforest"
 
 vim.keymap.set({"t", "v", "i"}, "<C-Space>", "<C-Bslash><C-n>")
 
+vim.keymap.set({"i", "t"}, "<C-h>", "<Left>")
+vim.keymap.set({"i", "t"}, "<C-j>", "<Down>")
+vim.keymap.set({"i", "t"}, "<C-k>", "<Up>")
+vim.keymap.set({"i", "t"}, "<C-l>", "<Right>")
 
 ------ window managment
-
 
 --- navigation
 vim.keymap.set("n", "wh", "<C-w>h")
