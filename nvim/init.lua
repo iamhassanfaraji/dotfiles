@@ -22,5 +22,7 @@ require("lazy").setup({
       	        dependencies = { 'nvim-lua/plenary.nvim' }
    	},
 })
+
+require("newMode").setup("<C-Space>")
 require("basics")
 require("plugins.telescope")
