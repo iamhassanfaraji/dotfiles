@@ -9,6 +9,8 @@ local function unmapMode()
 	for _,v in pairs(keymaps[activitiesState.activeMode].keymaps) do
 		vim.cmd.nunmap(v[2])
 	end
+	vim.cmd.nunmap(activitiesState.exitCommand)
+	vim.print(" ")
 end
 
 local function activeKeymapOfMode(trigger)
