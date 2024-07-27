@@ -1,19 +1,19 @@
 local wezterm = require 'wezterm'
 
-local keys = {
-        {	
+local keys = {	
+  {	
 		key = '|',
-		mods = 'LEADER|SHIFT',
+		mods = 'CTRL|SHIFT',
 		action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' }
 	},
 	{
 		key = '-',
-		mods = 'LEADER',
+    mods = "CTRL",
 		action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' }
 	},
 	{
 		key = 'w',
-		mods = 'LEADER',
+		mods = 'CTRL',
 		action = wezterm.action.CloseCurrentPane { confirm = true }
 	},
 	{
@@ -38,7 +38,7 @@ local keys = {
 	},
 	{
 		key = 'r',
-		mods = 'LEADER',
+		mods = 'CTRL',
 		action = wezterm.action.ActivateKeyTable {
 			name = 'resize_pane',
 			one_shot = false
@@ -46,7 +46,7 @@ local keys = {
 	},
 	{
 		key = 's',
-		mods = 'LEADER',
+		mods = 'CTRL',
 		action = wezterm.action.ActivateKeyTable {
 			name = 'scroll_pane',
 			one_shot = false
@@ -79,11 +79,11 @@ local keys = {
 local key_tables = {
 	resize_pane = {
 		{ key = 'h', action = wezterm.action.AdjustPaneSize { 'Left', 1 } },
-   		{ key = 'l', action = wezterm.action.AdjustPaneSize { 'Right', 1 } },
-    		{ key = 'k', action = wezterm.action.AdjustPaneSize { 'Up', 1 } },
-    		{ key = 'j', action = wezterm.action.AdjustPaneSize { 'Down', 1 } },
-    		{ key = 'q', action = 'PopKeyTable' },
-  	},
+    { key = 'l', action = wezterm.action.AdjustPaneSize { 'Right', 1 } },
+    { key = 'k', action = wezterm.action.AdjustPaneSize { 'Up', 1 } },
+    { key = 'j', action = wezterm.action.AdjustPaneSize { 'Down', 1 } },
+    { key = 'q', action = 'PopKeyTable' },
+  },
 	scroll_pane = {
 		{ key = 'k', action = wezterm.action.ScrollByLine(-1) },
 		{ key = 'j', action = wezterm.action.ScrollByLine(1) },
